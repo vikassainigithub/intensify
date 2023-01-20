@@ -1,0 +1,345 @@
+*{
+    margin:0rem;
+    padding:0rem;
+    // border:1px solid blueviolet;
+}
+html{
+    font-size:15px;
+}
+// variables
+$pacifico-font: 'Pacifico', cursive;
+$poppins-font: 'Poppins', sans-serif;
+$coral:coral;
+$teal:rgb(51, 155, 229);
+$white:white;
+$grey:grey;
+
+/* mixin(){} and include=if these property are required
+     then use @include flex-property();*/
+@mixin flex-property(){
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+/* header starts */
+header{
+    nav{
+        @include flex-property();
+        font-family: $pacifico-font;
+        // background-color: aqua;
+        h1{
+            color:$coral;
+            font-weight: 100;
+            margin-bottom: 0rem;
+            margin-top: 0.6rem;
+        }
+        .login{
+              margin:1rem;
+              padding:0.4rem 0.7rem;
+              background-color:$white;
+              border:0.1rem solid  grey;
+              font-family: $poppins-font;
+        }
+        span{
+            font-size: 0.6rem;
+            margin:1.5rem;
+        }
+    }
+    .banner{
+          font-family: $pacifico-font;
+          font-family:$poppins-font;
+          text-align: center;
+          box-sizing: border-box;
+          padding: 7rem ;
+          background-image: url("C:/Users/Lenovo/Desktop/web dev/intensify project-2/pic/banner.jpg");
+          background-size: cover;
+          background-repeat: no-repeat;
+    h1{
+        margin-bottom:0.8rem;
+        color:$teal;
+    }
+    p{
+       line-height: 1.7rem;
+       margin-bottom:0.8rem; 
+       color:$grey;
+    }
+    .mybtn{
+        padding:0.6rem 1.6rem;
+        margin-top: 0.6rem;
+        font-family: $poppins-font;
+        font-weight: 700;
+        background-color: $coral;
+        border:none;
+        color:$white;
+    }
+  }
+}
+// section starts
+section{
+        width:70%;
+        margin:0 auto;
+        padding:7rem 0rem;
+        box-sizing: border-box;
+        // background-color:aquamarine;
+        @include flex-property();
+        // justify-content: space-around !important;
+     .groupone{
+         text-align: right;
+         width:30%;
+     }
+     .groupthree{
+        text-align: left;
+        width:30%;
+     }
+        .groupone,.groupthree{
+        // background-color: bisque;
+        h1{
+            margin:0.6rem 0rem 0.8rem 0rem;
+            font-family: $poppins-font;
+            font-size: 1rem;
+            color:$teal;
+            word-spacing: 0.2rem;
+            letter-spacing: 0.1rem;
+        }
+        p{
+            margin:0.6rem 0rem 7rem 0rem;
+            line-height: 1.7rem;
+            font-family: $poppins-font;
+            font-size:0.9rem;
+            color:$grey;
+            letter-spacing: 0.1rem;
+        }
+        p1{
+            line-height: 1.7rem;
+            padding:0px;
+            margin:0px;
+            font-family: $poppins-font;
+            font-size:0.9rem;
+            color:$grey;
+            letter-spacing: 0.1rem;
+        }
+     }
+     .grouptwo{
+        width:30%;
+     }
+     .grouptwo img{
+          width:100%;
+          border-radius:50%;
+          background-color: bisque;
+     }
+}
+// bannertwo starts
+.bannertwo{
+      background-color:$coral;
+      padding:7rem 0rem;
+      color:$white;
+      font-family: $poppins-font;
+      text-align: center;
+      box-sizing: border-box;
+      margin:0rem;
+      h1{
+            margin:0.6rem 0rem 0.8rem 0rem;
+            font-family: $poppins-font;
+            font-size: 2rem;
+            color:$teal;
+            word-spacing: 0.2rem;
+            letter-spacing: 0.1rem;
+            font-weight: 700;
+       }
+       p{
+        margin:2rem 0rem 2rem 0rem;
+        line-height: 1.7rem;
+        font-family:$poppins-font;
+        font-size:1rem;
+        color:$white;
+        letter-spacing: 0.1rem;
+        font-style: italic;
+    }
+    h2{
+        margin-bottom:0.6rem;
+        font-family: $poppins-font;
+        color:$white;
+        font-weight: 100;
+        font-size: 1.4rem;
+        color:$teal;
+    }
+    p2{
+        font-family: $poppins-font;
+        font-style: italic;
+        font-weight: 100;
+    }
+}
+// bannerthree starts
+.bannerthree{
+         width:70%;
+         padding:7rem 0rem;
+         box-sizing: border-box;
+         @include flex-property();
+       .groupfour{
+          width:30%;
+          border:1px solid $coral;
+         img{
+          width:100%;
+         }
+         h1{
+            margin:1.5rem 0.6rem;
+            font-family:$poppins-font;
+            font-size:1.3rem;
+            color:$teal;
+         }
+         p{
+            margin:1.7rem 0.6rem;
+            font-family: $poppins-font;
+            color:$grey;
+            line-height: 1.7rem;
+         }
+        }
+       .groupfive{
+          width:30%;
+          border:1px solid $coral;
+        img{
+            width:100%;
+           }
+           h1{
+            margin:1.5rem 0.6rem;
+            font-family:$poppins-font;
+            font-size:1.3rem;
+            color:$teal;
+         }
+         p{
+            margin:1.7rem 0.6rem;
+            font-family: $poppins-font;
+            color:$grey;
+            line-height: 1.7rem;
+         }
+        }
+      .groupsix{
+        width:30%;
+        border:1px solid $coral;
+        img{
+           width:100%;
+          }
+          h1{
+            margin:1.5rem 0.6rem;
+            font-family:$poppins-font;
+            font-size:1.3rem;
+            color:$teal;
+         }
+         p{
+            margin:1.7rem 0.6rem;
+            font-family: $poppins-font;
+            color:$grey;
+            line-height: 1.7rem;
+         }
+    }
+}
+// footer starts
+footer{
+       text-align: center;
+       padding:7rem 0rem;
+       background-color: $teal;
+       font-family: $poppins-font;
+       color:$white;
+       h1{
+        color:$coral;
+       }
+      .footerend{
+        width:70%;
+        margin:0 auto;
+        @include flex-property();
+        p{
+            width:30%;
+        }
+        span{
+            color:$coral;
+        }
+      }
+       hr{
+        width:40%;
+        margin:0 auto;
+       }
+       p{
+        margin:2rem 0rem;
+        span{
+            color:$coral;
+        }
+    }
+}
+// media query starts for section(groupone,two,three)
+@media only screen and(max-width:1500px){
+    section{
+        .groupone,.groupthree{
+        // background-color: bisque;
+        p{
+            margin:0.6rem 0rem 3rem 0rem;
+        }
+     }
+   }
+}
+@media only screen and(max-width:1350px){
+    section{
+   .groupone,.groupthree{
+    // background-color: bisque;
+    p{
+        margin:0.3rem 0rem 1rem 0rem;
+    }
+  }
+ }
+}
+@media only screen and(max-width:1125px){
+    section{
+        width:33%;
+        margin:0 auto;
+        padding:7rem 0rem;
+        box-sizing: border-box;
+        // @include flex-property();
+     .groupone{
+         width:100%;
+         text-align: center;
+         margin-bottom: 4rem;
+     }
+     .grouptwo{
+        width:100%;
+        margin-bottom: 4rem;
+     }
+     .grouptwo img{
+          width:100%;
+          border-radius:50%;
+          background-color: bisque;
+     }
+     .groupthree{
+        width:100%;
+        text-align: center;
+     }
+}
+}
+// mediaquery starts for bannerthree(groupfour,five,six)
+@media only screen and(max-width:1125px){
+   .bannerthree{
+        width:33%;
+        margin:0 auto;
+        padding:7rem 0rem;
+        box-sizing: border-box;
+        // @include flex-property();
+     .groupfour,.groupfive{
+         width:100%;
+         margin-bottom: 4rem;
+     }
+     .groupsix{
+        width:100%;
+     }
+}
+}
+// mediaquery starts for footer
+@media only screen and(max-width:1125px){
+    footer{
+        text-align: center;
+       .footerend{
+         width:40%;
+         margin:0 auto;
+         p{
+             width:100%;
+         }
+      }
+ }
+}
